@@ -1,0 +1,156 @@
+:root {
+    --lang-gap: 0.5rem;
+    --navbar-padding-horizontal: 5rem;
+}
+
+.navbar {
+    box-sizing: border-box;
+    padding: 1rem var(--navbar-padding-horizontal);
+    justify-content: space-between;
+    box-shadow: 0 0 10px #0000001a
+}
+
+.menu-items {
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+.menu-items ul {
+    margin: 0px;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0px;
+    gap: 1rem;
+
+}
+
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 0.9rem;
+}
+
+.navbar-menu li a.selected {
+    color: #202020;
+}
+
+.navbar-end {
+    align-items: center;
+    gap: 2rem;
+    justify-content: end;
+}
+
+
+
+.languages {
+    width: min-content;
+    z-index: 9;
+}
+
+.lang-container {
+    align-items: center;
+
+}
+
+#up-arrow {
+    display: none;
+}
+
+#btnLang:checked~label #down-arrow {
+    display: none;
+}
+
+
+
+#btnLang:checked~label #up-arrow,
+#btnLang:checked~.lang-options {
+    display: flex;
+}
+
+
+.lang-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #0000001a;
+    right: 4px;
+    top: 100%;
+    background-color: var(--color-white);
+    gap: var(--lang-gap);
+    padding: var(--lang-gap);
+    justify-content: left;
+    align-items: start;
+}
+
+.lang-options button {
+    float: none;
+    display: flex;
+    border: none;
+    outline: none;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    gap: var(--lang-gap);
+    background-color: var(--color-white);
+}
+
+
+@media only screen and (width < 1000px) {
+    :root {
+        --navbar-padding-horizontal: 3rem;
+    }
+
+    header {
+        background-color: yellow;
+    }
+
+}
+
+
+
+@media only screen and (width < 1000px) {}
+
+@media only screen and (width < 850px) {
+    header {
+        background-color: brown;
+    }
+
+    .menu-items {
+        left: -6rem;
+    }
+}
+
+
+@media only screen and (width< 760px) {
+    .languages {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(2 * var(--navbar-padding-horizontal));
+    }
+
+
+}
+
+
+@media only screen and (width< 450px) {
+
+    :root {
+        --navbar-padding-horizontal: 2rem;
+    }
+
+    .navbar{
+        padding-left: 1rem;
+    }
+
+}

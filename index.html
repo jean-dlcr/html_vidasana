@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidaSana - Salud y Bienestar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="flex-column">
+
+    <header class="navbar flex relative" aria-label="main navigation">
+
+
+        <div class="logo flex cursor-pointer no-select">
+            <div class="logo-container">
+                <div class="logo-title" data-i18n="logo.logo-title"></div>
+                <div class="logo-description" data-i18n="logo.logo-description"></div>
+
+            </div>
+
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <input type="checkbox" class="none" id="sidebar-active">
+        <label for="sidebar-active">
+            <span class="material-icons open-sidebar-button no-select">
+                menu
+            </span>
+        </label>
+
+        <label id="overlay_sidebar" class="overlay" for="sidebar-active"></label>
+        <div class="menu-items flex">
+            <ul id="navbarMenu" class="navbar-menu flex">
+                <li><a class="no-select selected" href="#">Incio</a></li>
+                <li><a class="no-select" href="inicio2.html">Incio 2</a></li>
+                <li><a class="no-select" href="inicio3.html">Incio 3</a></li>
+            </ul>
+            <label for="sidebar-active">
+                <span class="material-icons close-sidebar-button no-select">
+                    close
+                </span>
+            </label>
+        </div>
+        <div class="navbar-end flex">
+            <div class="languages">
+                <div class="lang-container flex" style="position:relative">
+
+                    <span class="material-icons md-18 no-select">
+                        language
+                    </span>
+                    <div style="margin-left: 0.5rem; display:flex; justify-content: center; align-items: center;">
+                        ES
+
+                    </div>
+
+                    <input type="checkbox" class="none" id="btnLang" onchange="lang_options(this)">
+
+                    <label for="btnLang">
+                        <span class="material-icons no-select" id="down-arrow">
+                            arrow_drop_down
+                        </span>
+                        <span class="material-icons no-select" id="up-arrow">
+                            arrow_drop_up
+                        </span>
+                    </label>
+
+
+
+                    <div class="lang-options">
+                        <button>
+                            <img class="flag" src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/es.svg"
+                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;">
+                            Español</button>
+                        <button>
+                            <img class="flag" src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/us.svg"
+                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;">
+                            Inglés</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons bg-color-primary cursor-pointer no-select">
+                <a class="">Aplicación Web</a>
+            </div>
+        </div>
+        <label id="overlay_lang_options" class="overlay" for="btnLang"></label>
+
+
+
+    </header>
+
+    <main>
+
+        <!--CARRUSEL-->
+        <div class="slider flex-column">
+            <input id="slider_rd_1" type="radio" name="slider-index" class="none" checked />
+            <input id="slider_rd_2" type="radio" name="slider-index" class="none" />
+            <input id="slider_rd_3" type="radio" name="slider-index" class="none" />
+
+            <div class="flex">
+
+                <label for="slider_rd_1">
+                    <span class="material-icons md-36 no-select">
+                        keyboard_arrow_left
+                    </span>
+                </label>
+                <label for="slider_rd_2">
+                    <span class="material-icons md-36 no-select">
+                        keyboard_arrow_left
+                    </span>
+                </label>
+
+
+                <div class="slider-box">
+
+
+                    <div class="slider-container flex">
+
+                        <div id="slider_1" class="slider-content flex">
+                            <div class="slider-text">
+                                <h1 class="sld-title">
+                                    Empecémonos a <span class="text-color-primary">cuidar</span> en el trabajo
+                                </h1>
+                                <p class="sld-text">
+                                    En VidaSana, nos comprometemos a mejorar tu bienestar laboral con soluciones
+                                    integrales y personalizadas.
+                                </p>
+                            </div>
+                            <div class="slider-img"></div>
+                        </div>
+
+                        <div id="slider_2" class="slider-content flex">
+                            <div class="slider-text">
+                                <h1 class="sld-title">
+                                    Programas de <span class="text-color-primary">bienestar</span> exclusivos
+                                </h1>
+                                <p class="sld-text">
+                                    Descubre nuestras actividades y talleres diseñados para promover un estilo de vida
+                                    saludable y equilibrado en el entorno laboral.
+                                </p>
+                            </div>
+                            <div class="slider-img">
+
+
+                            </div>
+                        </div>
+
+                        <div id="slider_3" class="slider-content flex">
+                            <div class="slider-text">
+                                <h1 class="sld-title">
+                                    Participa en <span class="text-color-primary">nuestros</span> eventos
+                                </h1>
+                                <p class="sld-text">
+                                    Únete a nuestras actividades de wellness y eventos deportivos para mejorar tu salud
+                                    física y mental mientras te diviertes.
+                                </p>
+                            </div>
+                            <div class="slider-img">
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <label for="slider_rd_3">
+                    <span class="material-icons md-36 no-select">
+                        keyboard_arrow_left
+                    </span>
+                </label>
+
+
+            </div>
+
+            <div class="slider-index flex no-select">
+                <label for="slider_rd_1" class="cursor-pointer"></label>
+                <label for="slider_rd_2" class="cursor-pointer"></label>
+                <label for="slider_rd_3" class="cursor-pointer"></label>
+
+            </div>
+
+        </div>
+
+        <div id="aboutUs" class="container flex flex-column">
+            <h1>Sobre <span class="text-color-primary">Nosotros</span></h1>
+            <div class="content flex flex-row">
+                <div class="content-img flex">
+                    <div class="mision div-img"></div>
+                </div>
+                <div class="content-text flex flex-column">
+                    <h2>Nuestra <span class="text-color-primary">Misión</span></h2>
+                    <p>Lograr que los peruanos que alimentan el mundo encuentren una motivación por vivir una vida más
+                        saludable cada día, todos los días. Lo hacemos uniendo el poder del hardware y software
+                        ofreciendo una herramienta digital que:</p>
+                    <ul class="flex">
+                        <li>
+                            Monitoree sus principales indicadores de salud y alimentación.
+                        </li>
+                        <li>
+                            Cree espacios de motivación a través de activades de wellness.
+                        </li>
+                        <li>
+                            Ofrezca consejos personalizados para mejorar la salud.
+                        </li>
+                        <li>
+                            Fomente una comunidad de apoyo entre usuarios.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content flex flex-row flex-row-reverse">
+                <div class="content-img flex">
+                    <div class="vision div-img"></div>
+                </div>
+                <div class="content-text flex flex-column">
+                    <h2>Nuestra <span class="text-color-primary">Visión</span></h2>
+                    <p>"Ser la conexión que ayude a los colaboradores del Perú a mejorar su bienestar físico, mental y
+                        emocional en el 2023"</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="ourClients" class="container flex flex-column">
+            <h1>Nuestros <span class="text-color-primary">Clientes</span></h1>
+            <div class="content flex flex-row">
+                <div class="content-img flex">
+                    <div class="mision div-img"></div>
+                </div>
+                <div class="content-text flex flex-column">
+                    <h2>Colaboradores</h2>
+                    <ul class="flex flex-column">
+                        <li>
+                            Hombres y mujeres, entre 25 y 55 años, residentes en Perú, de nivel socioeconómico A, B, C y
+                            D.
+                        </li>
+                        <li>
+                            Colaboradores de empresas agroindustriales o afines, con jornada laboral completa,
+                            interesados en mejorar su salud y familiarizados con la tecnología.
+                        </li>
+                        <li>
+                            Personas que buscan un equilibrio entre su vida laboral y personal.
+                        </li>
+                        <li>
+                            Individuos que valoran y buscan programas de bienestar y salud en sus lugares de trabajo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content flex flex-row flex-row-reverse">
+                <div class="content-img flex">
+                    <div class="vision div-img"></div>
+                </div>
+                <div class="content-text flex flex-column">
+                    <h2>Empresas</h2>
+                    <ul class="flex flex-column">
+                        <li>
+                            Empresas medianas y grandes que operan en Perú, de rubro agroindustrial o afines, que
+                            cuenten con área de Recursos Humanos.
+                        </li>
+                        <li>
+                            Compañías interesadas en incrementar la productividad y satisfacción de sus empleados
+                            mediante programas de bienestar.
+                        </li>
+                        <li>
+                            Empresas que buscan reducir costos asociados a la salud laboral, como ausentismo y
+                            enfermedades ocupacionales.
+                        </li>
+                        <li>
+                            Organizaciones comprometidas con la responsabilidad social empresarial y el bienestar de sus
+                            colaboradores.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="benefits" class="container flex flex-column">
+            <h1>Nuestras <span class="text-color-primary">Ventajas</span></h1>
+            <div class="content flex flex-row">
+                <div class="content-img flex">
+                    <div class="mision div-img"></div>
+                </div>
+                <div class="content-text flex flex-column">
+                    <h2>Ventajas para el <span class="text-color-primary">colaborador</span></h2>
+                    <ul class="flex flex-column">
+                        <li>
+                            Hombres y mujeres, entre 25 y 55 años, residentes en Perú, de nivel socioeconómico A, B, C y
+                            D.
+                        </li>
+                        <li>
+                            Colaboradores de empresas agroindustriales o afines, con jornada laboral completa,
+                            interesados en mejorar su salud y familiarizados con la tecnología.
+                        </li>
+                        <li>
+                            Personas que buscan un equilibrio entre su vida laboral y personal.
+                        </li>
+                        <li>
+                            Individuos que valoran y buscan programas de bienestar y salud en sus lugares de trabajo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content flex flex-row flex-row-reverse">
+                <div class="content-img flex">
+                    <div class="vision div-img"></div>
+                </div>
+                <div class="content-text flex flex-column">
+                    <h2>Ventajas para la <span class="text-color-primary">empresas</span></h2>
+                    <ul class="flex flex-column">
+                        <li>
+                            Empresas medianas y grandes que operan en Perú, de rubro agroindustrial o afines, que
+                            cuenten con área de Recursos Humanos.
+                        </li>
+                        <li>
+                            Compañías interesadas en incrementar la productividad y satisfacción de sus empleados
+                            mediante programas de bienestar.
+                        </li>
+                        <li>
+                            Empresas que buscan reducir costos asociados a la salud laboral, como ausentismo y
+                            enfermedades ocupacionales.
+                        </li>
+                        <li>
+                            Organizaciones comprometidas con la responsabilidad social empresarial y el bienestar de sus
+                            colaboradores.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div id="ourTeam" class="container flex flex-column">
+            <h1>Nuestro <span class="text-color-primary">Equipo</span></h1>
+            <div class="content flex">
+                <div class="person-container">
+                    <div class="person-img woman"></div>
+                    <h3>CEO / Co funder</h3>
+                    <h4>Marcella Gonzales</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+                <div class="person-container">
+                    <div class="person-img man"></div>
+                    <h3>Gerente de Producto / Co funder</h3>
+                    <h4>Enrique Suárez</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+                <div class="person-container">
+                    <div class="person-img woman"></div>
+                    <h3>Comercial / MKT</h3>
+                    <h4>Maria Lucia Haro</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+                <div class="person-container">
+                    <div class="person-img woman"></div>
+                    <h3>Trainee Comercial / MKT</h3>
+                    <h4>Alexandra Parreño</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+                <div class="person-container">
+                    <div class="person-img man"></div>
+                    <h3>Desarrollador de Aplicación</h3>
+                    <h4>Jean De La Cruz</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+                <div class="person-container">
+                    <div class="person-img man"></div>
+                    <h3>Desarrollo de Software</h3>
+                    <h4>Miguel Arzapalo</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+                <div class="person-container">
+                    <div class="person-img man"></div>
+                    <h3>Desarrollo de Software</h3>
+                    <h4>José Galindo</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Derechos de autor &copy; 2024 | VidaSana</p>
+    </footer>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>

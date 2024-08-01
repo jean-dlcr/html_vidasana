@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="flex-column">
+
+    <header class="navbar flex relative" aria-label="main navigation">
+
+
+        <div class="logo flex cursor-pointer no-select">
+            <div class="logo-container">
+                <div class="logo-title" data-i18n="logo.logo-title"></div>
+                <div class="logo-description" data-i18n="logo.logo-description"></div>
+
+            </div>
+
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <input type="checkbox" class="none" id="sidebar-active">
+        <label for="sidebar-active">
+            <span class="material-icons open-sidebar-button no-select">
+                menu
+            </span>
+        </label>
+
+        <label id="overlay_sidebar" class="overlay" for="sidebar-active"></label>
+        <div class="menu-items flex">
+            <ul id="navbarMenu" class="navbar-menu flex">
+                <li><a class="no-select" href="index.html">Incio</a></li>
+                <li><a class="no-select selected" href="#">Incio 2</a></li>
+                <li><a class="no-select" href="inicio3.html">Incio 3</a></li>
+            </ul>
+            <label for="sidebar-active">
+                <span class="material-icons close-sidebar-button no-select">
+                    close
+                </span>
+            </label>
+        </div>
+        <div class="navbar-end flex">
+            <div class="languages">
+                <div class="lang-container flex" style="position:relative">
+
+                    <span class="material-icons md-18 no-select">
+                        language
+                    </span>
+                    <div style="margin-left: 0.5rem; display:flex; justify-content: center; align-items: center;">
+                        ES
+
+                    </div>
+
+                    <input type="checkbox" class="none" id="btnLang" onchange="lang_options(this)">
+
+                    <label for="btnLang">
+                        <span class="material-icons no-select" id="down-arrow">
+                            arrow_drop_down
+                        </span>
+                        <span class="material-icons no-select" id="up-arrow">
+                            arrow_drop_up
+                        </span>
+                    </label>
+
+
+
+                    <div class="lang-options">
+                        <button>
+                            <img class="flag" src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/es.svg"
+                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;">
+                            Español</button>
+                        <button>
+                            <img class="flag" src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/us.svg"
+                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;">
+                            Inglés</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons bg-color-primary cursor-pointer no-select">
+                <a class="">Aplicación Web</a>
+            </div>
+        </div>
+        <label id="overlay_lang_options" class="overlay" for="btnLang"></label>
+
+
+
+    </header>
+
+    <main style="flex: 1;">
+        <h1>Contenido de Página 2</h1>
+    </main>
+
+    <footer>
+        <p>Derechos de autor &copy; 2024 | VidaSana</p>
+    </footer>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>

@@ -1,0 +1,252 @@
+
+
+
+.slider {
+    width: 60rem;
+    aspect-ratio: 16/6;
+    
+    
+    margin: 2.5rem auto 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content>div{
+    flex:1;
+    flex-grow: 1;
+}
+
+.slider-text .sld-title{
+    font-size: 2.6rem;
+    line-height: 1.3;
+}
+
+.slider-text .sld-text{
+     line-height: 1.5;
+     font-size: 1.3rem;
+}
+
+
+.slider-img{
+    align-self: stretch;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slider > div.flex:first-of-type >*:nth-child(1){
+    order:1;
+}
+
+.slider > div.flex:first-of-type >*:nth-child(2){
+    order:2;
+}
+
+.slider > div.flex:first-of-type >*:nth-child(3){
+    order:3;
+}
+
+.slider > div.flex:first-of-type >*:nth-child(4){
+    order:4;
+}
+
+
+
+
+.slider-box {
+    overflow: hidden;
+    flex-grow: 1;
+    height: 100%;
+}
+
+
+.slider-content {
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.slider-container {
+    width: 300%;
+   height: 100%;
+   transition:all 0.3s ease-in-out;
+}
+
+.slider > *:nth-child(4){
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*slider index*/
+
+.slider div:first-of-type > label{
+    display: none;
+}
+
+.slider-index {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.slider-index label {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 5px;
+    
+
+}
+
+#slider_rd_1:checked~.slider-index label:nth-child(1),
+#slider_rd_2:checked~.slider-index label:nth-child(2),
+#slider_rd_3:checked~.slider-index label:nth-child(3) {
+    width: 1.3rem;
+    opacity: 1;
+}
+
+/* rdbtn 1*/
+
+#slider_rd_1:checked~ div.flex:first-of-type label:nth-child(4),
+#slider_rd_1:checked~ div.flex:first-of-type label:nth-child(2),
+
+#slider_rd_2:checked~ div.flex:first-of-type label:nth-child(4),
+#slider_rd_2:checked~ div.flex:first-of-type label:nth-child(1),
+
+#slider_rd_3:checked~ div.flex:first-of-type label:nth-child(1),
+#slider_rd_3:checked~ div.flex:first-of-type label:nth-child(2)
+{
+    display: flex;
+}
+
+#slider_rd_1:checked~ div.flex:first-of-type label:nth-child(4),
+
+#slider_rd_2:checked~ div.flex:first-of-type label:nth-child(1),
+
+#slider_rd_3:checked~ div.flex:first-of-type label:nth-child(2)
+{
+    order:1;
+    transform: none;
+}
+
+#slider_rd_1:checked~ div.flex:first-of-type label:nth-child(2),
+
+#slider_rd_2:checked~ div.flex:first-of-type label:nth-child(4),
+
+#slider_rd_3:checked~ div.flex:first-of-type label:nth-child(1)
+{
+    order:4;
+    display: flex;
+    transform: rotate(180deg);
+}
+
+/* --------------- */
+
+/* ------------- slide the content ---------- */
+#slider_rd_1:checked ~ div.flex .slider-box .slider-container{
+    margin-left: 0%;
+}
+
+#slider_rd_2:checked ~  div.flex .slider-box .slider-container{
+    margin-left: -100%;
+}
+
+#slider_rd_3:checked ~  div.flex .slider-box .slider-container{
+    margin-left: -200%;
+}
+
+
+
+/*--------------*/
+
+
+.title {
+    padding: 0;
+    margin-top: 3rem;
+    color: yellow;
+}
+
+
+
+
+@media only screen and (width < 1000px) {
+ 
+    .slider {
+       width: 90%;
+    }
+
+    .slider-text .sld-text{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (width < 922px) {
+ 
+    .slider {
+       width: 90%;
+    }
+
+    .slider-text .sld-title{
+        font-size: 2.2rem;
+    }
+
+
+}
+
+@media only screen and (width < 850px) {
+    .slider-text .sld-title{
+        font-size: 1.8rem;
+    }
+
+   
+}
+
+@media only screen and (width < 740px) {
+
+
+    .slider{
+        /* height: 45rem; */
+        aspect-ratio: 0.65;
+        margin-top: 1rem;
+    }
+
+    
+    .slider-content{
+        flex-direction: column;
+    }
+
+
+    .slider-text .sld-title{
+        font-size: 2.6rem;
+    }
+
+    .slider-text .sld-text{
+        font-size: 1.3rem;
+        font-stretch: expanded;
+    }
+
+   
+}
+
+@media only screen and (width < 450px) {
+    .slider{
+        width: 100%;
+        aspect-ratio: 0.55;
+    }
+
+    .slider-text .sld-text{
+
+        font-stretch: normal;
+    }
+
+}
+

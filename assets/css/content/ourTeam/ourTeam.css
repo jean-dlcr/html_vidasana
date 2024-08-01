@@ -1,0 +1,38 @@
+#ourTeam .content{
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#ourTeam.container {
+    gap: 2rem;
+}
+
+#ourTeam .person-container{
+    width: 15rem;
+    border: 1px solid brown;
+}
+
+#ourTeam .person-container h3{
+    height: 2.5rem;
+}
+
+#ourTeam .person-container :not(p) {
+    text-align: center;
+}
+
+#ourTeam .person-img{
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+#ourTeam .man{
+    background-image: url("../../../images/team/unknown_man.png");
+}
+
+#ourTeam .woman{
+    background-image: url("../../../images/team/unknown_woman.png");
+}

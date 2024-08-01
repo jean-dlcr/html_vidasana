@@ -1,0 +1,16 @@
+
+#slider_2{
+    flex-direction: row-reverse;
+}
+
+
+#slider_2 .slider-img{
+    background-image: url(../../images/slider/slider-2.jpg);
+    border-radius: 20px;
+}
+
+@media only screen and (width < 740px) {
+    #slider_2{
+        flex-direction: column-reverse;
+    }
+}

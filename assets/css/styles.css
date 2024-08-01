@@ -1,0 +1,20 @@
+@import "colors.css";
+@import "base.css";
+@import "navbar/navbar.css";
+@import "logo/logo.css";
+@import "sidebar/sidebar.css";
+@import "slider/slider.css";
+@import "slider/slider1.css";
+@import "slider/slider2.css";
+@import "slider/slider3.css";
+
+@import "content/content.css";
+@import "content/aboutUs/aboutUs.css";
+@import "content/ourClients/ourClients.css";
+@import "content/benefits/benefits.css";
+@import "content/ourTeam/ourTeam.css";
+
+@import "footer/footer.css";
+
+
+

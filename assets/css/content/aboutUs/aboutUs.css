@@ -1,0 +1,44 @@
+
+#aboutUs .mision{
+    background-image: url(../../../images/aboutUs/mision.jpg);
+}
+
+#aboutUs.container{
+    gap: 2rem;
+}
+
+#aboutUs .content-text{
+    justify-content: start;
+}
+
+
+#aboutUs .content-text ul{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#aboutUs .content:nth-of-type(2) p{
+    font-style: italic;
+}
+
+#aboutUs .vision{
+    background-image: url(../../../images/aboutUs/vision.png);
+}
+
+#aboutUs .content:nth-of-type(2) .content-text{
+    padding-bottom: 2rem;
+}
+
+
+@media only screen and (width < 1200px) {
+    .mision{
+        width: 100%;
+        aspect-ratio: 0;
+    }
+
+    .slider-text .sld-text{
+
+        font-stretch: normal;
+    }
+
+}

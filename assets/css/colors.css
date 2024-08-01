@@ -1,0 +1,18 @@
+
+:root{
+    /* colors */
+    --color-white : #FFFFFF;
+    --primary-color: #87CEEB;
+    --secondary-color: #FFB6C1;
+    --semiblack-color: #202020;
+    --text-color: var(--semiblack-color);
+
+}
+
+.text-color-primary{
+  color: var(--primary-color);
+}
+
+  .bg-color-primary{
+    background-color: var(--primary-color);
+  }

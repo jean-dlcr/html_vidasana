@@ -1,0 +1,40 @@
+.logo{
+    justify-content: start;
+}
+
+.logo-container{
+    
+}
+
+.logo-title{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.logo-description{
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* Mobile */
+@media only screen and (width< 760px) {
+    .logo-title{
+        font-size: 24px;
+    }
+    
+    .logo-description{
+        font-size: 12px;
+    }
+
+}
+
+/* Tablet * /
+
+@media (min-width: 768px) and (max-width: 991px){
+ 
+}
