@@ -1,7 +1,136 @@
 {
-
     "logo": {
         "logo-title": "VidaSana",
         "logo-description": "Salud y Bienestar"
-    }
+    },
+    "navLinks":{
+        "link1":"Inicio",
+        "link2":"Inicio 2",
+        "link3":"Inicio 3"
+    },
+    "lang":{
+        "op1":"Español",
+        "op2":"Inglés",
+        "text":"ES"
+    },
+    "btnApp":{
+        "name":"Aplicación Web"
+    },
+    "slider":{
+        "sld1":{
+            "slogan":"Empecémonos a <span class=\"text-color-primary\">cuidar</span> en el trabajo",
+            "text": "En VidaSana, nos comprometemos a mejorar tu bienestar laboral con soluciones integrales y personalizadas."
+        },
+        "sld2":{
+            "slogan":"Programas de <span class=\"text-color-primary\">bienestar</span> exclusivos",
+            "text": "Descubre nuestras actividades y talleres diseñados para promover un estilo de vida saludable y equilibrado en el entorno laboral."
+        },
+        "sld3":{
+            "slogan":"Participa en <span class=\"text-color-primary\">nuestros</span> eventos",
+            "text": "Únete a nuestras actividades de wellness y eventos deportivos para mejorar tu salud física y mental mientras te diviertes."
+        }
+    },
+    "aboutUs":{
+        "title":"Sobre <span class=\"text-color-primary\">Nosotros</span>",
+        "mision":{
+            "title": "Nuestra <span class=\"text-color-primary\">Misión</span>",
+            "text": "Lograr que los peruanos que alimentan el mundo encuentren una motivación por vivir una vida más saludable cada día, todos los días. Lo hacemos uniendo el poder del hardware y software ofreciendo una herramienta digital que:",
+            "list":{
+                "op1":"Monitoree sus principales indicadores de salud y alimentación.",
+                "op2":"Cree espacios de motivación a través de activades de wellness.",
+                "op3":"Ofrezca consejos personalizados para mejorar la salud.",
+                "op4":"Fomente una comunidad de apoyo entre usuarios."
+            }
+        },
+        "vision":{
+            "title":"Nuestra <span class=\"text-color-primary\">Visión</span>",
+            "text":"\"Ser la conexión que ayude a los colaboradores del Perú a mejorar su bienestar físico, mental y emocional en el 2023\""
+        }  
+    },
+    "ourClients":{
+        "title":"Nuestros <span class=\"text-color-primary\">Clientes</span>",
+        "colabs":{
+            "title":"Colaboradores",
+            "list":{
+                "op1":"Hombres y mujeres, entre 25 y 55 años, residentes en Perú, de nivel socioeconómico A, B, C y D.",
+                "op2":"Colaboradores de empresas agroindustriales o afines, con jornada laboral completa, interesados en mejorar su salud y familiarizados con la tecnología.",
+                "op3":"Personas que buscan un equilibrio entre su vida laboral y personal.",
+                "op4":"Individuos que valoran y buscan programas de bienestar y salud en sus lugares de trabajo."                
+            }
+        },
+        "company":{
+            "title":"Empresas",
+            "list":{
+                "op1":"Empresas medianas y grandes que operan en Perú, de rubro agroindustrial o afines, que cuenten con área de Recursos Humanos.",
+                "op2":"Compañías interesadas en incrementar la productividad y satisfacción de sus empleados mediante programas de bienestar.",
+                "op3":"Empresas que buscan reducir costos asociados a la salud laboral, como ausentismo y enfermedades ocupacionales.",
+                "op4":"Organizaciones comprometidas con la responsabilidad social empresarial y el bienestar de sus colaboradores."                
+            }
+        }
+    },
+    "benefits":{
+        "title":"Nuestras <span class=\"text-color-primary\">Ventajas</span>",
+        "colabs":{
+            "title":"Ventajas para los <span class=\"text-color-primary\">colaboradores</span>",
+            "list":{
+                "op1":"Mejora tu salud física, mental y emocional con nuestros programas personalizados.",
+                "op2":"Participa en actividades que te animan a adoptar hábitos saludables.",
+                "op3":"Recibe recomendaciones basadas en tus indicadores de salud.",
+                "op4":"Conecta con otros profesionales interesados en el bienestar."
+            }
+        },
+        "company":{
+            "title":"Ventajas para las <span class=\"text-color-primary\">empresas</span>",
+            "list":{
+                "op1":"Mejora la salud de tus empleados y reduce el ausentismo.",
+                "op2":"Disminuye gastos relacionados con problemas de salud.",
+                "op3":"Refuerza tu imagen corporativa con un compromiso genuino.",
+                "op4":"Fomenta un entorno de trabajo más armonioso y satisfactorio."
+            }
+        }
+    },
+    "ourTeam":{
+        "title":"Nuestro <span class=\"text-color-primary\">Equipo</span>",
+        "persons":{
+            "p1":{
+                "title": "CEO / Co funder",
+                "name": "Marcella Gonzales",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            },
+            "p2":{
+                "title": "Gerente de Producto / Co funder",
+                "name": "Enrique Suárez",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            },
+            "p3":{
+                "title": "Comercial / MKT",
+                "name": "Maria Lucia Haro",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            },
+            "p4":{
+                "title": "Trainee Comercial / MKT",
+                "name": "Alexandra Parreño",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            },
+            "p5":{
+                "title": "Desarrollo de Software",
+                "name": "Jean De La Cruz",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            },
+            "p6":{
+                "title": "Desarrollo de Software",
+                "name": "Miguel Arzapalo",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            },
+            "p7":{
+                "title": "Desarrollo de Software",
+                "name": "José Galindo",
+                "descript": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+            }
+        }
+    },
+    "footer":"Derechos de autor &copy; 2024 | VidaSana",
+    "page2": "Contenido Página 2",
+    "page3": "Contenido Página 3"
+
 }

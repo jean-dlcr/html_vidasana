@@ -23,6 +23,7 @@
 
 #aboutUs .vision{
     background-image: url(../../../images/aboutUs/vision.png);
+    background-size: 100% 100%;
 }
 
 #aboutUs .content:nth-of-type(2) .content-text{

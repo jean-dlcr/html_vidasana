@@ -3,6 +3,5 @@
 }
 
 #benefits .content-text ul{
-    flex-direction: column;
     gap: 1rem;
 }

@@ -109,11 +109,6 @@
     :root {
         --navbar-padding-horizontal: 3rem;
     }
-
-    header {
-        background-color: yellow;
-    }
-
 }
 
 
@@ -121,10 +116,6 @@
 @media only screen and (width < 1000px) {}
 
 @media only screen and (width < 850px) {
-    header {
-        background-color: brown;
-    }
-
     .menu-items {
         left: -6rem;
     }

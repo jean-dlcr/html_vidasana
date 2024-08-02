@@ -4,24 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 3</title>
+    <title>Página 2</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="flex-column">
-
     <header class="navbar flex relative" aria-label="main navigation">
-
-
         <div class="logo flex cursor-pointer no-select">
             <div class="logo-container">
-                <div class="logo-title" data-i18n="logo.logo-title"></div>
-                <div class="logo-description" data-i18n="logo.logo-description"></div>
-
+                <div class="logo-title" data-i18n="logo.logo-title">VidaSana</div>
+                <div class="logo-description" data-i18n="logo.logo-description">Salud y Bienestar</div>
             </div>
-
-
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -40,9 +35,9 @@
         <label id="overlay_sidebar" class="overlay" for="sidebar-active"></label>
         <div class="menu-items flex">
             <ul id="navbarMenu" class="navbar-menu flex">
-                <li><a class="no-select" href="index.html">Incio</a></li>
-                <li><a class="no-select" href="inicio2.html">Incio 2</a></li>
-                <li><a class="no-select selected" href="#">Incio 3</a></li>
+                <li><a class="no-select" href="index.html" data-i18n="navLinks.link1">Incio</a></li>
+                <li><a class="no-select selected" href="#" data-i18n="navLinks.link2">Incio 2</a></li>
+                <li><a class="no-select" href="home3.html" data-i18n="navLinks.link3">Incio 3</a></li>
             </ul>
             <label for="sidebar-active">
                 <span class="material-icons close-sidebar-button no-select">
@@ -57,13 +52,10 @@
                     <span class="material-icons md-18 no-select">
                         language
                     </span>
-                    <div style="margin-left: 0.5rem; display:flex; justify-content: center; align-items: center;">
+                    <div style="margin-left: 0.5rem; display:flex; justify-content: center; align-items: center;" data-i18n="lang.text">
                         ES
-
                     </div>
-
                     <input type="checkbox" class="none" id="btnLang" onchange="lang_options(this)">
-
                     <label for="btnLang">
                         <span class="material-icons no-select" id="down-arrow">
                             arrow_drop_down
@@ -73,40 +65,35 @@
                         </span>
                     </label>
 
-
-
                     <div class="lang-options">
-                        <button>
+                        <button id="btnES">
                             <img class="flag" src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/es.svg"
-                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;">
+                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;" data-i18n="lang.op1">
                             Español</button>
-                        <button>
+                        <button id="btnEN">
                             <img class="flag" src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/us.svg"
-                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;">
+                                style="display: inline-block; width: 1em; height: 1em; vertical-align: middle;" data-i18n="lang.op2">
                             Inglés</button>
                     </div>
                 </div>
             </div>
             <div class="buttons bg-color-primary cursor-pointer no-select">
-                <a class="">Aplicación Web</a>
+                <a class="" data-i18n="btnApp.name">Aplicación Web</a>
             </div>
         </div>
         <label id="overlay_lang_options" class="overlay" for="btnLang"></label>
-
-
-
     </header>
 
     <main style="flex: 1;">
-        <h1>Contenido de Página 3</h1>
+        <h1 data-i18n="page2">Contenido de Página 2</h1>
     </main>
 
     <footer>
-        <p>Derechos de autor &copy; 2024 | VidaSana</p>
+        <p data-i18n="footer">Derechos de autor &copy; 2024 | VidaSana</p>
     </footer>
 
 </body>
 
-<script src="assets/js/script.js"></script>
+<script type="module" src="assets/js/script.js"></script>
 
 </html>

@@ -8,6 +8,7 @@
 
 .container h1{
     text-align: center;
+    font-size: 3rem;
 }
 
 .content{
@@ -17,23 +18,41 @@
 
 .div-img{
     height: 100%;
-
-    aspect-ratio: 1.1;
+    width: 100%;
     border-radius: 20px;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
 .content-img, .content-text{
-    flex: 1;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    border: 1px solid green;
 }
 
 
 
 .content-text{
     line-height: 1.8;
+    padding: 1rem;
+}
+
+.content-text h2{
+    text-align: center;
+}
+
+
+
+@media only screen and (width < 1000px){
+    .content{
+        gap: 1rem;
+    }
+}
+
+
+@media only screen and (width < 1000px){
+    .container h1{
+        font-size: 2rem;
+    }
 }

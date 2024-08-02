@@ -4,10 +4,7 @@
 .slider {
     width: 60rem;
     aspect-ratio: 16/6;
-    
-    
     margin: 2.5rem auto 0;
-    border: 1px solid red;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -15,7 +12,7 @@
 
 .slider-content>div{
     flex:1;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .slider-text .sld-title{
@@ -33,6 +30,7 @@
     align-self: stretch;
     background-size: cover;
     background-position: center;
+    height: 100%;
 }
 
 
@@ -64,7 +62,6 @@
 
 .slider-content {
     width: 100%;
-    border: 1px solid black;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -210,15 +207,18 @@
    
 }
 
-@media only screen and (width < 740px) {
+@media only screen and (width < 760px) {
 
 
     .slider{
-        /* height: 45rem; */
-        aspect-ratio: 0.65;
+        height: 45rem;
+        /* aspect-ratio: 0.65; */
         margin-top: 1rem;
     }
 
+    .slider-content>div{
+        flex: auto;
+    }
     
     .slider-content{
         flex-direction: column;

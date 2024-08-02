@@ -6,19 +6,18 @@
 }
 
 #ourTeam.container {
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #ourTeam .person-container{
-    width: 15rem;
-    border: 1px solid brown;
+    width: 17rem;
 }
 
-#ourTeam .person-container h3{
+#ourTeam .person-descript h3{
     height: 2.5rem;
 }
 
-#ourTeam .person-container :not(p) {
+#ourTeam .person-descript :not(p) {
     text-align: center;
 }
 
@@ -29,10 +28,35 @@
     width: 100%;
 }
 
+#ourTeam .person-descript{
+    padding: 1rem;
+}
+
 #ourTeam .man{
     background-image: url("../../../images/team/unknown_man.png");
 }
 
 #ourTeam .woman{
     background-image: url("../../../images/team/unknown_woman.png");
+}
+
+
+@media only screen and (width < 760px) {
+    #ourTeam .person-container{
+        width: 100%;
+    }   
+
+    #ourTeam .person-descript h3{
+        font-size: 1.5rem;
+        height: min-content;
+    }
+
+    #ourTeam .person-descript h4{
+        font-size: 1.5rem;
+    }
+
+    /* #ourTeam .person-descript p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    } */ 
 }

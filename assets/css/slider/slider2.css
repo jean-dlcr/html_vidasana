@@ -9,7 +9,7 @@
     border-radius: 20px;
 }
 
-@media only screen and (width < 740px) {
+@media only screen and (width < 760px) {
     #slider_2{
         flex-direction: column-reverse;
     }
