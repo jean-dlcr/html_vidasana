@@ -3,9 +3,6 @@ export function updateContent(langData) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
       const value = (key.split('.')).reduce((obj, k) => obj && obj[k], langData);
-      if(key==="footer"){
-        console.log(key+" "+value);
-      }
       element.innerHTML = value;
     });
   }
@@ -14,7 +11,6 @@ export function updateContent(langData) {
  export async function fetchLanguageData(lang) {
     const response = await fetch(`assets/languages/${lang}.json`);
     const jsonResponse = await response.json();
-    console.log(jsonResponse);
     return jsonResponse;
   }
   

@@ -10,7 +10,7 @@
     box-shadow: 0 0 10px #0000001a
 }
 
-.menu-items {
+/* .menu-items {
     position: absolute;
     justify-content: center;
     left: 0;
@@ -18,7 +18,7 @@
     top: 0;
     bottom: 0;
 
-}
+} */
 
 .menu-items ul {
     margin: 0px;

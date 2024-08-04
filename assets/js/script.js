@@ -32,9 +32,6 @@ export function lang_options(checkbox) {
     } else {
       overlay.style.display = 'none';
     }
-
-    console.log("done");
-
   }
 
 
