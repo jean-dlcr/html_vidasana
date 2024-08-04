@@ -107,9 +107,6 @@
 @media only screen and (width < 1000px) {}
 
 @media only screen and (width < 850px) {
-    .menu-items {
-        left: -6rem;
-    }
 }
 
 
