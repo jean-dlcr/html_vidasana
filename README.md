@@ -23,7 +23,7 @@ VidaSana is a web application designed to showcase the capabilities of a develop
 
 <video src="https://github.com/user-attachments/assets/1ee3903d-1a80-4d3f-a2c5-ec78cc6620b4" controls type="video/mp4"></video>
 
-Demo: [LiveServer](https://jean-dlcr.github.io/html_vidasana/index.html)
+## Demo: [Link](https://jean-dlcr.github.io/html_vidasana/index.html)
 
 
 
